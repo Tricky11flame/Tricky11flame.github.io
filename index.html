@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine-weather</title>
+</head>
+</head>
+<body>
+
+    <script>
+        function refreshPage(){
+            window.location.reload();
+            update_things(value);
+        } 
+  
+    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+    <header>
+        <nav>
+            <div class="item i1">
+                <img class="mi"src="icons\foxy-weather.jpg" alt="foxyweather">
+            </div>
+            <div class="item i2">
+        
+        <select id="loc">
+            <option value="none">--Search your location--</option>
+            <option value="ndls">New Delhi</option>
+            <option value="nyc">New York</option>
+            <option value="lund">London</option>
+            <option value="mbm">Mumbai</option>
+            <option value="bgl">Bengaluru</option>
+            <option value="cni">Chennai</option>
+        </select>
+        <div><button type="submit" onClick="refreshPage() ">Submit</button></div>
+        <script>
+            var select = document.getElementById('loc');
+            var value = select.options[select.selectedIndex].value;
+        function update_things(){
+            const t=document.getElementById('temp2');
+            switch (value) {
+                case 'ndls':
+                    t.innerHTML('22');
+                    break;
+                case 'lund':
+                    t.innerHTML('45');
+                    break;
+                case 'nyc':
+                    t.innerHTML('32');
+                    break;
+                case 'bgl':
+                    t.innerHTML('22');
+                    break;
+
+                case 'cni':
+                    t.innerHTML('21');
+                    
+                    break;
+                case 'mbi':
+                    t.innerHTML('27');
+                    break;
+            
+                default:
+                    t.innerHTML('0')
+                    break;
+            }
+        }
+        
+        
+        </script>
+
+
+            </div>
+            <div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="box1">
+            <div>
+                <div class="logo1"> <img src="icons/hail.png" alt="cloudy"></div>
+                <div class="temp1">20 &deg; C</div>
+                <div class="temp1">29 &deg;C</div>
+                <div class="day">MON</div>
+            </div><div>
+                <div class="logo1"> <img src="icons/rain.png" alt="cloudy"></div>
+                <div class="temp1">23 &deg;C</div>
+                <div class="temp1">27 &deg;C</div>
+                <div class="day">TUE</div>
+            </div><div>
+                <div class="logo1"> <img src="icons/sunny.png" alt="cloudy"></div>
+                <div class="temp1">19 &deg;C</div>
+                <div class="temp1">29 &deg;C</div>
+                <div class="day">WED</div>
+            </div><div>
+                <div class="logo1"> <img src="icons/haze.png" alt="cloudy"></div>
+                <div class="temp1">23 &deg;C</div>
+                <div class="temp1">30 &deg;C</div>
+                <div class="day">THU</div>
+            </div><div>
+                <div class="logo1"> <img src="icons/hail.png" alt="cloudy"></div>
+                <div class="temp1">28 &deg;C</div>
+                <div class="temp1">31 &deg;</div>
+                <div class="day">FRI</div>
+            </div><div>
+                <div class="logo1"> <img src="icons/sunny.png" alt="cloudy"></div>
+                <div class="temp1">21 &deg;C</div>
+                <div class="temp1">26 &deg;C</div>
+                <div class="day">SAT</div>
+            </div><div>
+                <div class="logo1"> <img src="icons/hail.png" alt="cloudy"></div>
+                <div class="temp1">22 &deg;C</div>
+                <div class="temp1">25 &deg;C</div>
+                <div class="day">SUN</div>
+            </div>
+        </div>
+
+
+
+        <div class="box2">
+            <!-- <div class="gridbox3">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
+            <div class="box3">
+                
+                <div class="problem">
+                    <img src="icons/rain.png" alt="Rainy ">
+                    <div class="temp"><div><div id="temp2">23</div>&deg;C</div></div>
+                </div>
+
+                <div class="details">
+                    <div>
+                        <p>Humidity <br> <br> 80</p>
+                    </div>
+
+                    <div>
+                        <p>Wind speed <br>  <br> 89 kmph </p>
+                    </div>
+
+                    <div> 
+                        <p> Visibility <br> <br> 67m </p>
+                    </div>
+
+                    <div>
+                        <p>AQI <br> <br> 340 </p>
+                    </div>
+
+                    <div>
+                        <p>Pressure <br> <br> 60 Pa</p>
+                    </div>
+
+                    <div>
+                        <p>Dew Point <br> <br> 24 &deg;C</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+<!-- ooooomf------------------------------------------------- - --------------------------------------    -->
+
+            <div class="box4">
+<!-- this is an template for temp of famous places -->
+
+                <div>
+                    <div class="temp"> 22 &deg;C </div>
+                    <div class="loc">London,UK</div>
+                    <div class="logo"><img src="icons/cloud.png" alt="cloudy"></div>
+                    
+                </div>
+                
+                <div>
+                    <div class="temp"> 29 &deg;C </div>
+                    <div class="loc">New York City, USA</div>
+                    <div class="logo"><img src="icons/sunny.png" alt="cloudy"></div>
+                    
+                </div>
+
+                <div>
+                    <div class="temp"> 18 &deg;C </div>
+                    <div class="loc">Mumbai, India</div>
+                    <div class="logo"><img src="icons/cloud.png" alt="cloudy"></div>
+                    
+                </div>
+
+                <div>
+                    <div class="temp"> 35 &deg;C </div>
+                    <div class="loc">New Delhi, India</div>
+                    <div class="logo"><img src="icons/hail.png" alt="cloudy"></div>
+                    
+                </div>
+                
+                <div>
+                    <div class="temp">25 &deg;C</div>
+                    <div class="loc">Chennai , India</div>
+                    <div class="logo"><img src="icons/sunny.png" alt="cloudy"></div>
+                </div>
+                
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="txt">Copyrights&copy; reserved</div>
+        <div class="contact">
+            <div>Contact Me :</div>
+            <div><a href="https://www.instagram.com/ktk00.4/"><img src="icons/ig.jpeg" alt="Instagram"></a></div>
+            <div><a href="https://www.linkedin.com/in/kartikay-thakur-438314257/"><img src="icons/linkedin.png" alt="Linked-In"></a></div>
+            <div><a href="https://github.com/Tricky11flame"><img src="icons/git-hub.png" alt="Git-Hub"></a></div>
+            <div><a href="https://twitter.com/TrickyFlame21"><img src="icons/twitter.jpeg" alt="Twitter"></a></div>
+        </div>
+    </footer>
+    
+</body>
+</html>
