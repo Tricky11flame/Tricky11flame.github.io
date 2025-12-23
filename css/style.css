@@ -4,7 +4,8 @@
     --text: #1a1a1a;
     --subtext: #555;
     --card-bg: #ffffff;
-    --accent: #7f5af1;
+    --accent: #ff2189;
+    --main : #ff2189;
     --border: #e2e2e2;
   }
   
@@ -87,7 +88,7 @@
   
   /* ---------- HEADER CARDS ---------- */
   .header-card {
-    background: linear-gradient(to right, var(--accent), #5f3dc4);
+    background: linear-gradient(to left, var(--accent),var(--accent),var(--accent),var(--main),var(--main));
     color: white;
     border: none;
     box-shadow: none;
@@ -102,7 +103,7 @@
   }
   
   .header-card .card-subtitle {
-    color: #e0e0e0;
+    color: #ffccf2;
     font-weight: 400;
   }
   
